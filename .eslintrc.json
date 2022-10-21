@@ -45,6 +45,7 @@
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
-    "import/first": "error"
+    "import/first": "error",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
   }
 }
