@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 
 import styled from 'styled-components'
-import Posts from '~/components/Posts'
 
 export const Main = styled.main`
   width: 100vw;
@@ -23,7 +22,11 @@ const Home: NextPage = () => {
       </Head>
 
       <Main>
-        <Posts />
+        <h1>Hello World 🥳</h1>
+
+        <p>
+          Get started by editing <code>pages/index.tsx</code>
+        </p>
       </Main>
     </div>
   )

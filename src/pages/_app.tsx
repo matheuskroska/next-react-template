@@ -1,8 +1,6 @@
-import { ApolloProvider } from '@apollo/client'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
-import client from '~/../apollo-client'
 
 import { GlobalStyles, theme } from '~/styles'
 
@@ -18,12 +16,10 @@ export default function App({ Component, pageProps }: AppProps) {
         />
       </Head>
 
-      <ApolloProvider client={client}>
-        <ThemeProvider theme={theme}>
-          <GlobalStyles />
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </ApolloProvider>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }
